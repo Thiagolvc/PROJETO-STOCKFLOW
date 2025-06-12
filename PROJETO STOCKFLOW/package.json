@@ -1,26 +1,24 @@
 {
-   "name": "stockflow",
+  "name": "stockflow",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "npm run export-db && vite",
-  "export-db": "python ../app/export_to_js.py",
-  "lint": "eslint .",
-  "preview": "vite preview",
-  "start": "concurrently \"npm run dev\" \"python ../app/main.py\"",
-  "build": "vite build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
-},
+    "dev": "npm run export-db && vite",
+    "export-db": "python ../app/export_to_js.py",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "start": "concurrently \"npm run dev\" \"python ../app/main.py\"",
+    "build": "vite build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "framer-motion": "^12.12.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.0",
-    "swiper": "^11.2.6"
-  },
-  "dependencies": {
+    "swiper": "^11.2.6",
     "@eslint/js": "^9.25.0",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
