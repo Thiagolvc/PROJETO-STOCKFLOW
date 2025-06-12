@@ -3,13 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "dev": "npm run export-db && vite",
     "export-db": "python ../app/export_to_js.py",
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "concurrently \"npm run dev\" \"python ../app/main.py\"",
-    "build": "vite build",,
+    "build": "npm install && vite build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
