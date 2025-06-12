@@ -12,7 +12,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "concurrently \"npm run dev\" \"python ../app/main.py\"",
-    "build": "npm install && vite build",
+    "build": "npm ci && vite build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
